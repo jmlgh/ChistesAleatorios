@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.javi.chistesaleatorios.ChistesActivity">
+
+    <Button
+        android:id="@+id/btn_siguiente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="reproducirSiguienteChiste"
+        android:text="@string/chistes_btn_siguiente"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_chiste_fav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="reproducirFavorito"
+        android:text="@string/chistes_btn_chistefav"
+        app:layout_constraintLeft_toLeftOf="@+id/btn_siguiente"
+        app:layout_constraintRight_toRightOf="@+id/btn_siguiente"
+        app:layout_constraintTop_toBottomOf="@+id/btn_siguiente"
+        tools:layout_editor_absoluteX="148dp" />
+
+    <Button
+        android:id="@+id/btn_chistes_alea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="274dp"
+        android:onClick="toggleAleatorio"
+        android:text="@string/chistes_btn_chistealea"
+        app:layout_constraintBottom_toTopOf="@+id/btn_chistes_bucle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/btn_siguiente"
+        app:layout_constraintRight_toRightOf="@+id/btn_siguiente"
+        app:layout_constraintTop_toBottomOf="@+id/btn_chiste_fav" />
+
+    <Button
+        android:id="@+id/btn_chistes_bucle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:onClick="toggleBucle"
+        android:text="@string/chistes_btn_chistesbucle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/btn_siguiente"
+        app:layout_constraintRight_toRightOf="@+id/btn_siguiente" />
+</android.support.constraint.ConstraintLayout>

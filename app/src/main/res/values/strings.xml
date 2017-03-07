@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Chistes Aleatorios</string>
+    <string name="bienvenida_tv_preparado">¿Preparado para unos chistes?</string>
+    <string name="bienvenida_btn_entrar">Entrar</string>
+    <string name="bienvenida_btn_salir">Salir</string>
+    <string name="chistes_btn_siguiente">Siguiente chiste</string>
+    <string name="chistes_btn_chistefav">Reproduce tu chiste favorito</string>
+    <string name="chistes_btn_chistealea">Pasar a modo aleatorio</string>
+    <string name="chistes_btn_chisteorden">Pasar a modo ordenado</string>
+    <string name="chistes_btn_chistesbucle">Pasar a chistes en bucle</string>
+    <string name="chistes_btn_uno">Pasar a chistes de uno en uno</string>
+</resources>

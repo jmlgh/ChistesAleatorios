@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.javi.chistesaleatorios.BienvenidaActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bienvenida_tv_preparado"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032"
+        android:id="@+id/tv_bienvenida" />
+
+    <Button
+        android:id="@+id/btn_entrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/bienvenida_btn_entrar"
+        app:layout_constraintEnd_toEndOf="@+id/tv_bienvenida"
+        app:layout_constraintStart_toStartOf="@+id/tv_bienvenida"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bienvenida"
+        tools:layout_editor_absoluteX="28dp" />
+
+    <Button
+        android:id="@+id/btn_salir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/bienvenida_btn_salir"
+        app:layout_constraintTop_toBottomOf="@+id/btn_entrar"
+        app:layout_constraintEnd_toEndOf="@+id/tv_bienvenida"
+        app:layout_constraintStart_toStartOf="@+id/tv_bienvenida"
+        tools:layout_editor_absoluteX="28dp" />
+
+</android.support.constraint.ConstraintLayout>
